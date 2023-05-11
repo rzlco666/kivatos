@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/app/css/style.css">
+        <link rel="stylesheet" href="assets/app/css/main.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    
+        <script src="assets/jquery/dist/jquery.min.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Navbar after login -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light m">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0 text-primary" href="#">
+            Internet Banking Bank RK
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Transactions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Payment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">E-wallet</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center me-5">
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle d-flex align-items-center hidden-arrow nav-link"
+              href="#"
+              id="navbarDropdownMenuAvatar"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Username
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuAvatar"
+            >
+              <li>
+                <a class="dropdown-item" href="#">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <div class="wrap py-3">
+        <div class="container-lg">
+            <div class="d-flex justify-content-between mb-2">
+                <h2>
+                    Topup Berhasil
+                </h2>
+
+           
+              
+            </div>
+            
+            <div class="pembayaran-form">
+                <div class="card shadow-sm mb-3">
+                    <form>
+                        <div class="card-body">
+                            <p>Halo Josephine,</p>
+                            <p>Berikut adalah detail transaksi Anda:</p>
+
+                            <h6>Penyedia Jasa</h6>
+                            <h6>Gopay Customer</h6>
+                            <h6>*****2291</h6>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="tgl-akhir-bayar">Tanggal</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="tgl-akhir-bayar" type="date" value="2023-04-27" disabled="disabled">
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="tgl-tempo">Nominal Topup</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="tgl-tempo" type="text" value="100000" disabled="disabled">
+                                </div>
+                            </div><div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="tagihan">Biaya Transaksi </label>
+                                <div class="col-md-10">
+                                    <input class="form-control" id="tagihan" type="text" value="1000" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="sudah-bayar">Total Transaksi</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="text"  id="sudah-bayar" value="101000">
+                                </div>
+                            </div>
+                    </form>
+                    <p>Simpan email ini sebagai referensi transaksi Anda. Terima kasih telah bertransaksi di platform kami. </p>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+    ></script>
+  </body>
+</html>
