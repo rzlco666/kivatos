@@ -1,162 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Home</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light m">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand mt-lg-0 text-primary" href="home">
-          Internet Banking Bank RK
-        </a>
-        <!-- Toggle button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <title>Home</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light m">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-lg-0 text-primary" href="../home/home.html">
+        Internet Banking Bank RK
+      </a>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-mdb-toggle="dropdown" aria-expanded="fal
+              ">Transfer</a>
+            <!-- Masih otw ngerjain -->
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="betweenAcc">Between Accounts</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="toSomeone">To Someone</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../deposit/deposit.html">Deposit</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="recipient">Add/Edit Recipient</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="payment" role="button">Payment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="e-wallet" role="button">E-Wallet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../history/history.html" role="button">History</a>
+          </li>
+        </ul>
+        <!-- Left links -->
         <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="fal
-              "
-                >Transfer</a
-              >
-              <!-- Masih otw ngerjain -->
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="betweenAcc"
-                    >Between Accounts</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="toSomeone">To Someone</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="recipient"
-                    >Add/Edit Recipient</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="payment" role="button">Payment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="e-wallet" role="button">E-Wallet</a>
-            </li>
-          </ul>
-          <!-- Left links -->
-          <!-- Collapsible wrapper -->
 
-          <!-- Right elements -->
-          <div class="d-flex align-items-center me-5">
-            <div class="dropdown">
-              <a
-                class="dropdown-toggle d-flex align-items-center nav-link"
-                href="#"
-                id="navbarDropdownMenuAvatar"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Username
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownMenuAvatar"
-              >
-                <li>
-                  <a class="dropdown-item" href="profile">My profile</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="login">Logout</a>
-                </li>
-              </ul>
-            </div>
+        <!-- Right elements -->
+        <div class="d-flex align-items-center me-5">
+          <div class="dropdown">
+            <a class="dropdown-toggle d-flex align-items-center nav-link" href="#" id="navbarDropdownMenuAvatar"
+              role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              Username
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+              <li>
+                <a class="dropdown-item" href="../profile/profile.html">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" id="logout">Logout</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- Right elements -->
       </div>
-      <!-- Container wrapper -->
-    </nav>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
 
-    <div
-      class="container border border-2 rounded shadow-5 mt-5"
-      style="max-width: 35%"
-    >
-      <div class="row">
-        <div class="col-lg-12">
-          <h4 class="mt-3">Transfer To Someone</h4>
-          <form action="">
-            <div class="form-group mb-4">
-              <label for=""
-                >1. Please select the account you would like to deposit:</label
-              >
-              <select name="" id="" class="form-control">
-                <option value="" disabled="disabled" selected="selected">
-                  -- select the account --
-                </option>
-                <option value=""></option>
-                <option value=""></option>
-              </select>
-            </div>
-            <div class="form-group mb-4">
-              <label
-                >2. Please specify the amount you would like to deposit:
-              </label>
-              <input
-                type="text"
-                name="amount"
-                id="amount"
-                class="form-control"
-                placeholder=""
-              />
-            </div>
+  <div class="container border border-2 rounded shadow-5 mt-5" style="max-width: 35%">
+    <div class="row">
+      <div class="col-lg-12">
+        <h4 class="mt-3">Deposit</h4>
+        <form action="">
+          <div class="form-group mb-4">
+            <label>Please specify the amount you would like to deposit:
+            </label>
+            <input type="text" name="amount" id="amount" class="form-control" placeholder="" />
+          </div>
 
-            <button class="btn btn-lg btn-primary btn-block mb-5" type="submit">
-              Deposit
-            </button>
-          </form>
-        </div>
+          <button class="btn btn-lg btn-primary btn-block mb-5" type="submit">
+            Deposit
+          </button>
+        </form>
       </div>
     </div>
+  </div>
 
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
-    ></script>
-  </body>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      const accessToken = localStorage.getItem("accessToken");
+      const username = localStorage.getItem("username");
+      $("#navbarDropdownMenuAvatar").text(username);
+
+      // Fungsi logout
+      $("#logout").click(function () {
+        localStorage.removeItem("userId");
+        localStorage.removeItem("username");
+        localStorage.removeItem("email");
+        localStorage.removeItem("phoneNumber");
+        localStorage.removeItem("tokenType");
+        localStorage.removeItem("accessToken");
+
+        // Redirect ke halaman login
+        window.location.href = "../login/login.html";
+      });
+
+      // Fungsi deposit
+      $("form").submit(function (event) {
+        event.preventDefault();
+
+        const id = localStorage.getItem("userId");
+        const amount = $("#amount").val();
+
+        $.ajax({
+          url: `http://localhost:8124/kivatos/api/transaction/rekening/${id}`,
+          type: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${accessToken}`
+          },
+          data: JSON.stringify({
+            "tipeTransaksi": "deposit",
+            "jumlah": amount,
+            "deskripsi": "deposit bank kivotos"
+          }),
+          success: function (data, status, xhr) {
+            // Tampilkan pesan success
+            let alertSuccess = `<div class="alert alert-success alert-dismissible fade show" role="alert">
+                                ${data.message}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>`;
+            $(".container").prepend(alertSuccess);
+
+            // Hapus isi input amount
+            $("#amount").val("");
+
+            console.log(data);
+          },
+          error: function (jqXhr, textStatus, errorMessage) {
+            // Handle error
+            let alertError = `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                              ${jqXhr.responseJSON.message}
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>`;
+            $(".container").prepend(alertError);
+
+            console.log(errorMessage);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>
