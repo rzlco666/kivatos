@@ -1,171 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/app/css/style.css" />
-    <link rel="stylesheet" href="assets/app/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="assets/font-awesome/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
 
-    <script src="assets/jquery/dist/jquery.min.js"></script>
-    <title>Pilih E-wallet</title>
-  </head>
-  <body>
-    <!-- Navbar after login -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light m">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <!-- Toggle button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <title>Pilih E-wallet</title>
+</head>
 
+<body>
+  <!-- Navbar after login -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light m">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-lg-0 text-primary" href="../home/home.html">
+        Internet Banking Bank RK
+      </a>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Navbar brand -->
-          <a class="navbar-brand mt-2 mt-lg-0 text-primary" href="#">
-            Internet Banking Bank RK
-          </a>
           <!-- Left links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Transactions</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-mdb-toggle="dropdown" aria-expanded="fal
+                ">Transfer</a>
+              <!-- Masih otw ngerjain -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="betweenAcc">Between Accounts</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="toSomeone">To Someone</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../deposit/deposit.html">Deposit</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="recipient">Add/Edit Recipient</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Payment</a>
+              <a class="nav-link" href="../pembayaran-tagihan/detail_pembayaran.html" role="button">Payment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">E-wallet</a>
+              <a class="nav-link" href="../ewallet/choose_ewallet.html" role="button">E-Wallet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../history/history.html" role="button">History</a>
             </li>
           </ul>
           <!-- Left links -->
-        </div>
-        <!-- Collapsible wrapper -->
-
-        <!-- Right elements -->
-        <div class="d-flex align-items-center me-5">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle d-flex align-items-center hidden-arrow nav-link"
-              href="#"
-              id="navbarDropdownMenuAvatar"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Username
-            </a>
-            <ul
-              class="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuAvatar"
-            >
-              <li>
-                <a class="dropdown-item" href="#">My profile</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Logout</a>
-              </li>
-            </ul>
+          <!-- Collapsible wrapper -->
+          <!-- Right elements -->
+          <div class="d-flex align-items-center me-5">
+            <div class="dropdown">
+              <a class="dropdown-toggle d-flex align-items-center nav-link" href="#" id="navbarDropdownMenuAvatar"
+                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                Username
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                <li>
+                  <a class="dropdown-item" href="../profile/profile.html">My profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" id="logout">Logout</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <div class="wrap py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between mb-5">
+        <h2>Pilih E-wallet</h2>
       </div>
-      <!-- Container wrapper -->
-    </nav>
-    <div class="wrap py-3">
-      <div class="container-lg">
-        <div class="d-flex justify-content-between mb-5">
-          <h2>Pilih E-wallet</h2>
-        </div>
 
-        <div id="pilih-ewallet">
-          <div class="card shadow-sm mb-3 justify-content-center">
-            <div class="d-flex flex-row">
+      <div id="pilih-ewallet">
+        <div class="card shadow-sm mb-3 justify-content-center">
+          <div class="d-flex flex-row">
 
-              <div class="card shadow-lg mt-1 mb-2 mx-3">
-                <div class="card-body">
-                  <div class="d-flex flex-column justify-content-center text-center">
-                    <h5>Nama E-wallet</h5>
-                    <img src="tbd.jpg" class="w-75 mx-auto"/>
-                    <button type="button" class="btn btn-primary mt-3">
-                      Top-Up
-                    </button>
-                  </div>
+            <div class="card shadow-lg mt-1 mb-2 mx-3">
+              <div class="card-body">
+                <div class="d-flex flex-column justify-content-center text-center">
+                  <h5>Dani</h5>
+                  <img src="tbd.jpg" class="w-75 mx-auto" />
+                  <button type="button" class="btn btn-primary mt-3" id="dani">
+                    Top-Up
+                  </button>
                 </div>
               </div>
-
-              <div class="card shadow-lg mt-1 mb-2 mx-3">
-                <div class="card-body">
-                  <div class="d-flex flex-column justify-content-center text-center">
-                    <h5>Nama E-wallet</h5>
-                    <img src="tbd.jpg" class="w-75 mx-auto"/>
-                    <button type="button" class="btn btn-primary mt-3">
-                      Top-Up
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card shadow-lg mt-1 mb-2 mx-3">
-                <div class="card-body">
-                  <div class="d-flex flex-column justify-content-center text-center">
-                    <h5>Nama E-wallet</h5>
-                    <img src="tbd.jpg" class="w-75 mx-auto"/>
-                    <button type="button" class="btn btn-primary mt-3">
-                      Top-Up
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card shadow-lg mt-1 mb-2 mx-3">
-                <div class="card-body">
-                  <div class="d-flex flex-column justify-content-center text-center">
-                    <h5>Nama E-wallet</h5>
-                    <img src="tbd.jpg" class="w-75 mx-auto"/>
-                    <button type="button" class="btn btn-primary mt-3">
-                      Top-Up
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              
             </div>
+
+            <div class="card shadow-lg mt-1 mb-2 mx-3">
+              <div class="card-body">
+                <div class="d-flex flex-column justify-content-center text-center">
+                  <h5>Gapay</h5>
+                  <img src="tbd.jpg" class="w-75 mx-auto" />
+                  <button type="button" class="btn btn-primary mt-3" id="gapay">
+                    Top-Up
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-lg mt-1 mb-2 mx-3">
+              <div class="card-body">
+                <div class="d-flex flex-column justify-content-center text-center">
+                  <h5>Ovi</h5>
+                  <img src="tbd.jpg" class="w-75 mx-auto" />
+                  <button type="button" class="btn btn-primary mt-3" id="ovi">
+                    Top-Up
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-lg mt-1 mb-2 mx-3">
+              <div class="card-body">
+                <div class="d-flex flex-column justify-content-center text-center">
+                  <h5>Shopoopay</h5>
+                  <img src="tbd.jpg" class="w-75 mx-auto" />
+                  <button type="button" class="btn btn-primary mt-3" id="shopoopay">
+                    Top-Up
+                  </button>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
-    ></script>
-  </body>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="topUpModal" tabindex="-1" aria-labelledby="topUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="topUpModalLabel">Top-Up E-Wallet</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="topup-form">
+            <div class="mb-3">
+              <label for="id_ewallet" class="form-label">ID E-Wallet</label>
+              <input type="text" class="form-control" id="id_ewallet" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="amount" class="form-label">Amount</label>
+              <input type="number" class="form-control" id="amount">
+            </div>
+            <button type="submit" class="btn btn-primary">Top-Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      const accessToken = localStorage.getItem("accessToken");
+      const username = localStorage.getItem("username");
+      const userId = localStorage.getItem("userId");
+      $("#navbarDropdownMenuAvatar").text(username);
+
+      // Cek apakah ada pesan success dalam localStorage
+      const alertSuccessMessage = localStorage.getItem("alertSuccess");
+
+      if (alertSuccessMessage) {
+        // Tampilkan pesan success
+        let alertSuccess = `<div class="alert alert-success alert-dismissible fade show" role="alert">
+                            ${alertSuccessMessage}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>`;
+        $(".container").prepend(alertSuccess);
+
+        // Hapus pesan success dari localStorage
+        localStorage.removeItem("alertSuccess");
+      }
+
+      // Format as rupiah
+      let formatter = new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        minimumFractionDigits: 0
+      });
+
+      // Fungsi logout
+      $("#logout").click(function () {
+        localStorage.removeItem("userId");
+        localStorage.removeItem("username");
+        localStorage.removeItem("email");
+        localStorage.removeItem("phoneNumber");
+        localStorage.removeItem("tokenType");
+        localStorage.removeItem("accessToken");
+
+        // Redirect ke halaman login
+        window.location.href = "../login/login.html";
+      });
+
+      const eWallets = ['dani', 'gapay', 'ovi', 'shopoopay'];
+      eWallets.forEach((ewallet, index) => {
+        $(`#${ewallet}`).click(function () {
+          let userId = localStorage.getItem("userId");
+          let idEwallet = (4 * userId) - (3 - index);
+          $('#id_ewallet').val(idEwallet);
+          new mdb.Modal(document.getElementById('topUpModal')).show();
+        });
+      });
+
+      $('#topup-form').submit(function (e) {
+        e.preventDefault();
+        let idEwallet = $('#id_ewallet').val();
+        let amount = $('#amount').val();
+
+        $.ajax({
+          url: `http://localhost:8124/kivatos/api/transaction/ewallet/${idEwallet}`,
+          type: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${accessToken}`
+          },
+          data: JSON.stringify({
+            "tipeTransaksi": "topup",
+            "jumlah": amount,
+            "deskripsi": "transfer wallet bank kivotos"
+          }),
+          success: function (data, status, xhr) {
+            new mdb.Modal(document.getElementById('topUpModal')).hide();
+
+            // Simpan pesan success ke dalam localStorage
+            localStorage.setItem("alertSuccess", data.message);
+
+            // Hapus isi input amount
+            $("#amount").val("");
+
+            console.log(data);
+
+            // Refresh halaman
+            window.location.href = "choose_ewallet.html";
+          },
+          error: function (jqXhr, textStatus, errorMessage) {
+            // Handle error
+            let alertError = `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                              ${jqXhr.responseJSON.message}
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>`;
+            $(".container").prepend(alertError);
+
+            console.log(errorMessage);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>

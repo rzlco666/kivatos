@@ -1,226 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Detail Tagihan</title>
-  </head>
-  <body>
-    <!-- Navbar after login -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light m">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand mt-lg-0 text-primary" href="#">
-          Internet Banking Bank RK
-        </a>
-        <!-- Toggle button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <title>Detail Tagihan</title>
+</head>
+
+<body>
+  <!-- Navbar after login -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light m">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-lg-0 text-primary" href="../home/home.html">
+        Internet Banking Bank RK
+      </a>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-mdb-toggle="dropdown" aria-expanded="fal
+                ">Transfer</a>
+            <!-- Masih otw ngerjain -->
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="betweenAcc">Between Accounts</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="toSomeone">To Someone</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../deposit/deposit.html">Deposit</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="recipient">Add/Edit Recipient</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pembayaran-tagihan/detail_pembayaran.html" role="button">Payment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../ewallet/choose_ewallet.html" role="button">E-Wallet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../history/history.html" role="button">History</a>
+          </li>
+        </ul>
+        <!-- Left links -->
         <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="fal
-              "
-                >Transfer</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Between Accounts</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">To Someone</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Add/Edit Recipient</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="fal
-              "
-                >Payment</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Education</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Electricity</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Transportation</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="fal
-              "
-                >E-Wallet</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Ovo</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">GoPay</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Dana</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Shopeepay</a>
-                </li>
-              </ul>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Payment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">E-wallet</a>
-            </li> -->
-          </ul>
-          <!-- Left links -->
-          <!-- Collapsible wrapper -->
 
-          <!-- Right elements -->
-          <div class="d-flex align-items-center me-5">
-            <div class="dropdown">
-              <a
-                class="dropdown-toggle d-flex align-items-center nav-link"
-                href="#"
-                id="navbarDropdownMenuAvatar"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Username
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownMenuAvatar"
-              >
-                <li>
-                  <a class="dropdown-item" href="#">My profile</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Logout</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
         <!-- Right elements -->
-      </div>
-      <!-- Container wrapper -->
-    </nav>
-
-    <!-- Default form register -->
-    <div class="container text-center mt-5" style="max-width: 600px">
-      <form class="text-center border border-2 p-4" action="#!">
-        <p class="h4 mb-4">Detail Tagihan (Pendidikan/Transportasi/Listrik)</p>
-
-        <div class="form mb-4">
-          <!-- Rekening -->
-          <div class="form-group row">
-            <label class="col-md-2 col-form-label" for="rekening">Rekening</label>
-            <div class="col-md-10">
-              <select name="" id="" class="form-control">
-                <option value="" disabled="disabled" selected="selected">
-                  -- Select Your Account --
-                </option>
-                <option value=""></option>
-                <option value=""></option>
-              </select>            
-            </div>
-          </div>
-          <!-- Nomor Tagihan -->
-          <div class="form-group row">
-            <label class="col-md-2 col-form-label" for="no-tagihan">Nomor</label>
-            <div class="col-md-10">
-              <input class="form-control" id="no-tagihan" type="text" >            
-            </div>
-          </div>
-          <!-- Jumlah Tagihan -->
-          <div class="form-group row">
-            <label class="col-md-2 col-form-label" for="jml-tagihan">Jumlah</label>
-            <div class="col-md-10">
-              <input class="form-control" id="jml-tagihan" type="text">            
-            </div>
-          </div>
-          <!-- Biaya Admin-->
-          <div class="form-group row">
-            <label class="col-md-2 col-form-label" for="biaya-admin">Admin</label>
-            <div class="col-md-10">
-              <input class="form-control" id="biaya-admin" type="text" value="4.500" disabled="disabled">            
-            </div>
-          </div>
-          <!-- Total -->
-          <div class="form-group row">
-            <label class="col-md-2 col-form-label" for="total">Total</label>
-            <div class="col-md-10">
-              <label class="col-md-4 col-form-label" for="total">Rp 2.000.000.000</label>
-            </div>
+        <div class="d-flex align-items-center me-5">
+          <div class="dropdown">
+            <a class="dropdown-toggle d-flex align-items-center nav-link" href="#" id="navbarDropdownMenuAvatar"
+              role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              Username
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+              <li>
+                <a class="dropdown-item" href="../profile/profile.html">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" id="logout">Logout</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- Payment button -->
-        <a
-          type="submit"
-          class="btn btn-primary btn-block btn-lg mb-4"
-          href="login.html"
-        >
-          Bayar Tagihan
-        </a>
-      </form>
+      </div>
+      <!-- Right elements -->
     </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Default form register -->
+  <div class="container text-center mt-5" style="max-width: 600px">
+    <div class="text-center border border-2 p-4">
+      <p class="h4 mb-4">Detail Tagihan (Pendidikan/Transportasi/Listrik)</p>
 
-    <!-- Default form register -->
+      <div class="form mb-4">
+        <!-- Rekening -->
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="rekening">Rekening</label>
+          <div class="col-md-10">
+            <input class="form-control" id="rekening" type="text" readonly>
+          </div>
+        </div>
+        <!-- Jenis Tagihan -->
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="rekening">Tagihan</label>
+          <div class="col-md-10">
+            <select name="" id="tagihan" class="form-control">
+              <option value="" disabled="disabled" selected="selected">
+                -- Select Jenis Tagihan --
+              </option>
+              <option value="education_2306">Pendidikan</option>
+              <option value="transportasi_2305">Transportasi</option>
+              <option value="listrik_2304">Listrik</option>
+            </select>
+          </div>
+        </div>
+        <!-- Jumlah Tagihan -->
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="jml-tagihan">Jumlah</label>
+          <div class="col-md-10">
+            <input class="form-control" id="jml-tagihan" type="number">
+          </div>
+        </div>
+        <!-- Total -->
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="total">Total</label>
+          <div class="col-md-10">
+            <label class="col-md-4 col-form-label" id="total-label" for="total">Rp 0</label>
+          </div>
+        </div>
+      </div>
+      <!-- Payment button -->
+      <button id="submit-payment" class="btn btn-primary btn-block btn-lg mb-4">
+        Bayar Tagihan
+      </button>
+    </div>
+  </div>
 
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
-    ></script>
-  </body>
+  <!-- Default form register -->
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      const accessToken = localStorage.getItem("accessToken");
+      const username = localStorage.getItem("username");
+      const userId = localStorage.getItem("userId");
+      $("#navbarDropdownMenuAvatar").text(username);
+
+      // Add phone number to rekening field
+      const phoneNumber = localStorage.getItem("phoneNumber");
+      $("#rekening").val(phoneNumber);
+
+      // Update total field real-time when jumlah tagihan is changed
+      $("#jml-tagihan").on("input", function () {
+        let amount = $(this).val();
+
+        // Format as rupiah
+        let formatter = new Intl.NumberFormat('id-ID', {
+          style: 'currency',
+          currency: 'IDR',
+          minimumFractionDigits: 0
+        });
+
+        $("#total-label").text(formatter.format(amount));
+      });
+
+      // Fungsi logout
+      $("#logout").click(function () {
+        localStorage.removeItem("userId");
+        localStorage.removeItem("username");
+        localStorage.removeItem("email");
+        localStorage.removeItem("phoneNumber");
+        localStorage.removeItem("tokenType");
+        localStorage.removeItem("accessToken");
+
+        // Redirect ke halaman login
+        window.location.href = "../login/login.html";
+      });
+
+      // Bind click event to submit payment button
+      $("#submit-payment").click(function () {
+        const tipeTransaksiMap = {
+          "listrik_2304": "Tagihan Listrik",
+          "transportasi_2305": "Tagihan Transportasi",
+          "education_2306": "Tagihan Pendidikan"
+        };
+
+        const tipeTransaksi = $("#tagihan").val();
+        const jumlah = $("#jml-tagihan").val();
+        const deskripsi = tipeTransaksiMap[tipeTransaksi];
+
+        const paymentData = {
+          tipeTransaksi: tipeTransaksi,
+          jumlah: jumlah,
+          deskripsi: deskripsi
+        };
+
+        $.ajax({
+          url: `http://localhost:8124/kivatos/api/transaction/rekening/${userId}`,
+          type: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${accessToken}`
+          },
+          data: JSON.stringify(paymentData),
+          success: function (data, status, xhr) {
+            // Tampilkan pesan success
+            let alertSuccess = `<div class="alert alert-success alert-dismissible fade show" role="alert">
+                                ${data.message}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>`;
+            $(".container").prepend(alertSuccess);
+
+            // Hapus isi input amount
+            $("#jml-tagihan").val("");
+
+            console.log(data);
+          },
+          error: function (jqXhr, textStatus, errorMessage) {
+            // Handle error
+            let alertError = `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                              ${jqXhr.responseJSON.message}
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>`;
+            $(".container").prepend(alertError);
+
+            console.log(errorMessage);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>

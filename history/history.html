@@ -33,7 +33,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-mdb-toggle="dropdown" aria-expanded="fal
-              ">Transfer</a>
+                ">Transfer</a>
             <!-- Masih otw ngerjain -->
             <ul class="dropdown-menu">
               <li>
@@ -51,10 +51,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="payment" role="button">Payment</a>
+            <a class="nav-link" href="../pembayaran-tagihan/detail_pembayaran.html" role="button">Payment</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="e-wallet" role="button">E-Wallet</a>
+            <a class="nav-link" href="../ewallet/choose_ewallet.html" role="button">E-Wallet</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../history/history.html" role="button">History</a>
@@ -116,6 +116,13 @@
       const userId = localStorage.getItem("userId");
       $("#navbarDropdownMenuAvatar").text(username);
 
+      // Format as rupiah
+      let formatter = new Intl.NumberFormat('id-ID', {
+          style: 'currency',
+          currency: 'IDR',
+          minimumFractionDigits: 0
+        });
+
       // Fungsi logout
       $("#logout").click(function () {
         localStorage.removeItem("userId");
@@ -152,8 +159,8 @@
                             <td>${formatDate(transaction.detailTransaksiList[0].createdAt)}</td>
                             <td>${transaction.detailTransaksiList[0].deskripsi}</td>
                             <td>Finished</td>
-                            <td>${transaction.jumlah}</td>
-                            <td>${transaction.saldoNasabah}</td>
+                            <td>${formatter.format(transaction.jumlah)}</td>
+                            <td>${formatter.format(transaction.saldoNasabah)}</td>
                            </tr>`;
           });
 
